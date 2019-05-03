@@ -14,6 +14,7 @@
 		109DC7CA227C6DD700B91971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7C8227C6DD700B91971 /* LaunchScreen.storyboard */; };
 		109DC7D2227C712900B91971 /* SampleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D1227C712900B91971 /* SampleImpl.swift */; };
 		109DC7D4227C720F00B91971 /* SampleImplTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */; };
+		109DC7D8227C74D700B91971 /* ECProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D7227C74D700B91971 /* ECProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		109DC7CB227C6DD700B91971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109DC7D1227C712900B91971 /* SampleImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImpl.swift; sourceTree = "<group>"; };
 		109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImplTableViewCell.swift; sourceTree = "<group>"; };
+		109DC7D7227C74D700B91971 /* ECProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +65,28 @@
 				109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */,
 				109DC7D1227C712900B91971 /* SampleImpl.swift */,
 				109DC7C3227C6DD500B91971 /* Main.storyboard */,
+				109DC7D5227C747F00B91971 /* SampleImpls */,
 				109DC7C6227C6DD700B91971 /* Assets.xcassets */,
 				109DC7C8227C6DD700B91971 /* LaunchScreen.storyboard */,
 				109DC7CB227C6DD700B91971 /* Info.plist */,
 			);
 			path = "cocoda-impls";
+			sourceTree = "<group>";
+		};
+		109DC7D5227C747F00B91971 /* SampleImpls */ = {
+			isa = PBXGroup;
+			children = (
+				109DC7D6227C74A200B91971 /* IntroECProduct */,
+			);
+			path = SampleImpls;
+			sourceTree = "<group>";
+		};
+		109DC7D6227C74A200B91971 /* IntroECProduct */ = {
+			isa = PBXGroup;
+			children = (
+				109DC7D7227C74D700B91971 /* ECProductViewController.swift */,
+			);
+			path = IntroECProduct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109DC7D8227C74D700B91971 /* ECProductViewController.swift in Sources */,
 				109DC7D2227C712900B91971 /* SampleImpl.swift in Sources */,
 				109DC7C2227C6DD500B91971 /* SampleImplTableViewController.swift in Sources */,
 				109DC7C0227C6DD500B91971 /* AppDelegate.swift in Sources */,

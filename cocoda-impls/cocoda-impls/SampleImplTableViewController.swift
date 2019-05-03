@@ -11,13 +11,14 @@ import UIKit
 class SampleImplTableViewController: UIViewController {
 
     private let sampleImpls: [SampleImpl] = [
-        SampleImpl(title: "test", vc: UIViewController.self)
+        SampleImpl(title: "Introduction - EC Product", vc: ECProductViewController.self)
     ]
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.register(SampleImplTableViewCell.self, forCellReuseIdentifier: SampleImplTableViewCell.identifier)
             tableView.dataSource = self
+            tableView.delegate = self
         }
     }
 
@@ -39,6 +40,17 @@ extension SampleImplTableViewController: UITableViewDataSource {
         cell.configure(with: sampleImpls[indexPath.row])
 
         return cell
+    }
+
+}
+
+extension SampleImplTableViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sampleImpl = sampleImpls[indexPath.row]
+        let vc = sampleImpl.vc.init()
+        navigationController?.pushViewController(vc, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
