@@ -15,6 +15,7 @@
 		109DC7D2227C712900B91971 /* SampleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D1227C712900B91971 /* SampleImpl.swift */; };
 		109DC7D4227C720F00B91971 /* SampleImplTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */; };
 		109DC7D8227C74D700B91971 /* ECProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D7227C74D700B91971 /* ECProductViewController.swift */; };
+		109DC7DA227C76FC00B91971 /* ECProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7D9227C76FC00B91971 /* ECProductViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		109DC7D1227C712900B91971 /* SampleImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImpl.swift; sourceTree = "<group>"; };
 		109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImplTableViewCell.swift; sourceTree = "<group>"; };
 		109DC7D7227C74D700B91971 /* ECProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECProductViewController.swift; sourceTree = "<group>"; };
+		109DC7D9227C76FC00B91971 /* ECProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECProductViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				109DC7D7227C74D700B91971 /* ECProductViewController.swift */,
+				109DC7D9227C76FC00B91971 /* ECProductViewController.xib */,
 			);
 			path = IntroECProduct;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109DC7DA227C76FC00B91971 /* ECProductViewController.xib in Resources */,
 				109DC7CA227C6DD700B91971 /* LaunchScreen.storyboard in Resources */,
 				109DC7C7227C6DD700B91971 /* Assets.xcassets in Resources */,
 				109DC7C5227C6DD500B91971 /* Main.storyboard in Resources */,
