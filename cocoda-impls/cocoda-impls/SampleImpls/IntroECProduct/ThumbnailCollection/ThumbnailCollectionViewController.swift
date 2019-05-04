@@ -10,20 +10,18 @@ import UIKit
 
 class ThumbnailCollectionViewController: UIViewController {
 
-    var images: [UIImage?] = [] {
-        didSet {
-            thumbnailCollectionView.reloadData()
-        }
-    }
+    private let images: [UIImage?]
     
     @IBOutlet weak var thumbnailCollectionView: UICollectionView! {
         didSet {
-            thumbnailCollectionView.register(ThumbnailCollectionViewCell.self, forCellWithReuseIdentifier: ThumbnailCollectionViewCell.identifier)
+            thumbnailCollectionView.register(UINib(nibName: "ThumbnailCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ThumbnailCollectionViewCell.identifier)
             thumbnailCollectionView.dataSource = self
+            thumbnailCollectionView.delegate = self
         }
     }
 
-    init(with frame: CGRect) {
+    init(with frame: CGRect, images: [UIImage?]) {
+        self.images = images
         super.init(nibName: nil, bundle: nil)
         view.frame = frame
     }
@@ -34,6 +32,12 @@ class ThumbnailCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        thumbnailCollectionView.reloadData()
     }
 
 }
@@ -52,3 +56,14 @@ extension ThumbnailCollectionViewController: UICollectionViewDataSource {
     }
 
 }
+
+extension ThumbnailCollectionViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewSize = collectionView.frame.size
+
+        return CGSize(width: collectionViewSize.height, height: collectionViewSize.height)
+    }
+
+}
+
