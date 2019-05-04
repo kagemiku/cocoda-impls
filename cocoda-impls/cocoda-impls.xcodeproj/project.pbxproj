@@ -16,6 +16,10 @@
 		109DC7D4227C720F00B91971 /* SampleImplTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */; };
 		109DC7D8227C74D700B91971 /* ECProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D7227C74D700B91971 /* ECProductViewController.swift */; };
 		109DC7DA227C76FC00B91971 /* ECProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7D9227C76FC00B91971 /* ECProductViewController.xib */; };
+		109DC7DE227D658700B91971 /* ThumbnailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7DC227D658700B91971 /* ThumbnailCollectionViewController.swift */; };
+		109DC7DF227D658700B91971 /* ThumbnailCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7DD227D658700B91971 /* ThumbnailCollectionViewController.xib */; };
+		109DC7E2227D675800B91971 /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7E0227D675800B91971 /* ThumbnailCollectionViewCell.swift */; };
+		109DC7E3227D675800B91971 /* ThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7E1227D675800B91971 /* ThumbnailCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImplTableViewCell.swift; sourceTree = "<group>"; };
 		109DC7D7227C74D700B91971 /* ECProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECProductViewController.swift; sourceTree = "<group>"; };
 		109DC7D9227C76FC00B91971 /* ECProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECProductViewController.xib; sourceTree = "<group>"; };
+		109DC7DC227D658700B91971 /* ThumbnailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewController.swift; sourceTree = "<group>"; };
+		109DC7DD227D658700B91971 /* ThumbnailCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCollectionViewController.xib; sourceTree = "<group>"; };
+		109DC7E0227D675800B91971 /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		109DC7E1227D675800B91971 /* ThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +94,30 @@
 		109DC7D6227C74A200B91971 /* IntroECProduct */ = {
 			isa = PBXGroup;
 			children = (
+				109DC7DB227D655A00B91971 /* ThumbnailCollection */,
 				109DC7D7227C74D700B91971 /* ECProductViewController.swift */,
 				109DC7D9227C76FC00B91971 /* ECProductViewController.xib */,
 			);
 			path = IntroECProduct;
+			sourceTree = "<group>";
+		};
+		109DC7DB227D655A00B91971 /* ThumbnailCollection */ = {
+			isa = PBXGroup;
+			children = (
+				109DC7E4227D675C00B91971 /* Cell */,
+				109DC7DC227D658700B91971 /* ThumbnailCollectionViewController.swift */,
+				109DC7DD227D658700B91971 /* ThumbnailCollectionViewController.xib */,
+			);
+			path = ThumbnailCollection;
+			sourceTree = "<group>";
+		};
+		109DC7E4227D675C00B91971 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				109DC7E0227D675800B91971 /* ThumbnailCollectionViewCell.swift */,
+				109DC7E1227D675800B91971 /* ThumbnailCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				109DC7DA227C76FC00B91971 /* ECProductViewController.xib in Resources */,
+				109DC7E3227D675800B91971 /* ThumbnailCollectionViewCell.xib in Resources */,
+				109DC7DF227D658700B91971 /* ThumbnailCollectionViewController.xib in Resources */,
 				109DC7CA227C6DD700B91971 /* LaunchScreen.storyboard in Resources */,
 				109DC7C7227C6DD700B91971 /* Assets.xcassets in Resources */,
 				109DC7C5227C6DD500B91971 /* Main.storyboard in Resources */,
@@ -165,10 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				109DC7D8227C74D700B91971 /* ECProductViewController.swift in Sources */,
+				109DC7E2227D675800B91971 /* ThumbnailCollectionViewCell.swift in Sources */,
 				109DC7D2227C712900B91971 /* SampleImpl.swift in Sources */,
 				109DC7C2227C6DD500B91971 /* SampleImplTableViewController.swift in Sources */,
 				109DC7C0227C6DD500B91971 /* AppDelegate.swift in Sources */,
 				109DC7D4227C720F00B91971 /* SampleImplTableViewCell.swift in Sources */,
+				109DC7DE227D658700B91971 /* ThumbnailCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

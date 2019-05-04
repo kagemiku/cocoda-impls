@@ -10,21 +10,22 @@ import UIKit
 
 class ECProductViewController: UIViewController {
 
+    private let thumbnailImages: [UIImage?] = [
+        nil,
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupSubViews()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupSubViews() {
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height / 2)
+        let thumbnailCollectionVC = ThumbnailCollectionViewController(with: frame)
+        addChild(thumbnailCollectionVC)
+        view.addSubview(thumbnailCollectionVC.view)
+        thumbnailCollectionVC.didMove(toParent: self)
     }
-    */
 
 }
