@@ -10,7 +10,9 @@ import UIKit
 
 class ThumbnailCollectionViewCell: UICollectionViewCell {
 
-    static let identifier = String(describing: type(of: self))
+    static var identifier: String {
+        return String(describing: self)
+    }
 
     @IBOutlet weak var imageView: UIImageView!
 

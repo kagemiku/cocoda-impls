@@ -10,7 +10,9 @@ import UIKit
 
 class SampleImplTableViewCell: UITableViewCell {
 
-    static let identifier = String(describing: type(of: self))
+    static var identifier: String {
+        return String(describing: self)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
