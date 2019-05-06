@@ -17,22 +17,33 @@ class ECProductViewController: UIViewController {
         UIImage(named: "sample4"),
     ]
 
+    private lazy var thumbnailCollectionVC: ThumbnailCollectionViewController = {
+        let vc = ThumbnailCollectionViewController(with: thumbnailImages)
+        return vc
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupSubViews()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+
+        layoutSubViews()
     }
 
     private func setupSubViews() {
-        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height / 2)
-        let thumbnailCollectionVC = ThumbnailCollectionViewController(with: frame, images: thumbnailImages)
         addChild(thumbnailCollectionVC)
         view.addSubview(thumbnailCollectionVC.view)
         thumbnailCollectionVC.didMove(toParent: self)
+    }
+
+    private func layoutSubViews() {
+        let navHeight = view.safeAreaInsets.top
+        let frame = CGRect(x: 0, y: navHeight, width: view.frame.width, height: 284.0)
+        thumbnailCollectionVC.view.frame = frame
     }
 
 }

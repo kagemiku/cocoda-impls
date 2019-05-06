@@ -20,10 +20,9 @@ class ThumbnailCollectionViewController: UIViewController {
         }
     }
 
-    init(with frame: CGRect, images: [UIImage?]) {
+    init(with images: [UIImage?]) {
         self.images = images
         super.init(nibName: nil, bundle: nil)
-        view.frame = frame
     }
 
     required init?(coder aDecoder: NSCoder) {
