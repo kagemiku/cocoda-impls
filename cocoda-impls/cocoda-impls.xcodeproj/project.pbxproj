@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		109DC7C0227C6DD500B91971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7BF227C6DD500B91971 /* AppDelegate.swift */; };
 		109DC7C2227C6DD500B91971 /* SampleImplTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7C1227C6DD500B91971 /* SampleImplTableViewController.swift */; };
-		109DC7C5227C6DD500B91971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7C3227C6DD500B91971 /* Main.storyboard */; };
 		109DC7C7227C6DD700B91971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7C6227C6DD700B91971 /* Assets.xcassets */; };
 		109DC7CA227C6DD700B91971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7C8227C6DD700B91971 /* LaunchScreen.storyboard */; };
 		109DC7D2227C712900B91971 /* SampleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7D1227C712900B91971 /* SampleImpl.swift */; };
@@ -20,13 +19,13 @@
 		109DC7DF227D658700B91971 /* ThumbnailCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7DD227D658700B91971 /* ThumbnailCollectionViewController.xib */; };
 		109DC7E2227D675800B91971 /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109DC7E0227D675800B91971 /* ThumbnailCollectionViewCell.swift */; };
 		109DC7E3227D675800B91971 /* ThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7E1227D675800B91971 /* ThumbnailCollectionViewCell.xib */; };
+		109DC7E7227FF1B900B91971 /* SampleImplTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109DC7E6227FF1B900B91971 /* SampleImplTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		109DC7BC227C6DD500B91971 /* cocoda-impls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoda-impls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		109DC7BF227C6DD500B91971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		109DC7C1227C6DD500B91971 /* SampleImplTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImplTableViewController.swift; sourceTree = "<group>"; };
-		109DC7C4227C6DD500B91971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		109DC7C6227C6DD700B91971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109DC7C9227C6DD700B91971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109DC7CB227C6DD700B91971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		109DC7DD227D658700B91971 /* ThumbnailCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCollectionViewController.xib; sourceTree = "<group>"; };
 		109DC7E0227D675800B91971 /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 		109DC7E1227D675800B91971 /* ThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
+		109DC7E6227FF1B900B91971 /* SampleImplTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleImplTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				109DC7BF227C6DD500B91971 /* AppDelegate.swift */,
-				109DC7C1227C6DD500B91971 /* SampleImplTableViewController.swift */,
-				109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */,
-				109DC7D1227C712900B91971 /* SampleImpl.swift */,
-				109DC7C3227C6DD500B91971 /* Main.storyboard */,
+				109DC7E5227FF12700B91971 /* SampleImplTable */,
 				109DC7D5227C747F00B91971 /* SampleImpls */,
 				109DC7C6227C6DD700B91971 /* Assets.xcassets */,
 				109DC7C8227C6DD700B91971 /* LaunchScreen.storyboard */,
@@ -118,6 +115,17 @@
 				109DC7E1227D675800B91971 /* ThumbnailCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		109DC7E5227FF12700B91971 /* SampleImplTable */ = {
+			isa = PBXGroup;
+			children = (
+				109DC7C1227C6DD500B91971 /* SampleImplTableViewController.swift */,
+				109DC7E6227FF1B900B91971 /* SampleImplTableViewController.xib */,
+				109DC7D3227C720F00B91971 /* SampleImplTableViewCell.swift */,
+				109DC7D1227C712900B91971 /* SampleImpl.swift */,
+			);
+			path = SampleImplTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,10 +188,10 @@
 			files = (
 				109DC7DA227C76FC00B91971 /* ECProductViewController.xib in Resources */,
 				109DC7E3227D675800B91971 /* ThumbnailCollectionViewCell.xib in Resources */,
+				109DC7E7227FF1B900B91971 /* SampleImplTableViewController.xib in Resources */,
 				109DC7DF227D658700B91971 /* ThumbnailCollectionViewController.xib in Resources */,
 				109DC7CA227C6DD700B91971 /* LaunchScreen.storyboard in Resources */,
 				109DC7C7227C6DD700B91971 /* Assets.xcassets in Resources */,
-				109DC7C5227C6DD500B91971 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		109DC7C3227C6DD500B91971 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				109DC7C4227C6DD500B91971 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		109DC7C8227C6DD700B91971 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
